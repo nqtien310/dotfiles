@@ -79,8 +79,8 @@ Plugin 'embear/vim-localvimrc'
 Plugin 'henrik/vim-qargs'
 Plugin 'mxw/vim-jsx'
 Plugin 'alvan/vim-closetag'
-Plugin 'skalnik/vim-vroom'
 Plugin 'Keithbsmiley/rspec.vim'
+Plugin 'janko-m/vim-test'
 
 call vundle#end()            " required
 
@@ -698,4 +698,9 @@ set rubydll=$HOME/.rbenv/versions/2.5.1/lib/libruby.2.5.1.dylib
 "Add in set re=1 to your  vimrc to force the old regex engine on any version newer
 set re=1
 
-let g:vroom_use_spring = 1
+"configuration for The GOAT vim-test
+"Aside from the utilities like TestNearest + TestFile, we can run the original
+"Rspec command right on vim "RSpec --tag export_scheduler"
+nmap <silent> <leader>r :TestNearest<CR>
+nmap <silent> <leader>R :TestFile<CR>
+let g:test#runner_commands = ['RSpec']
