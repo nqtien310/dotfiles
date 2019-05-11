@@ -19,7 +19,6 @@ Plugin 'scrooloose/nerdcommenter'
 "Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-pathogen'
 Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-rails.git'
 Plugin 'tpope/vim-haml'
 Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-fugitive'
@@ -91,7 +90,8 @@ call vundle#end()            " required
 set history=1024
 set cf                                " enable error files and error jumping
 set ffs=unix,dos,mac                  " support these files
-filetype plugin indent on
+"filetype plugin indent on
+filetype indent on
 set isk+=_,$,@,%,#,-
 set modeline
 set autoread                          " reload file
