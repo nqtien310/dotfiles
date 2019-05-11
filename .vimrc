@@ -80,6 +80,7 @@ Plugin 'embear/vim-localvimrc'
 Plugin 'henrik/vim-qargs'
 Plugin 'mxw/vim-jsx'
 Plugin 'alvan/vim-closetag'
+Plugin 'Keithbsmiley/rspec.vim'
 
 call vundle#end()            " required
 
