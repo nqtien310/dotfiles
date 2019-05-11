@@ -79,6 +79,7 @@ Plugin 'embear/vim-localvimrc'
 Plugin 'henrik/vim-qargs'
 Plugin 'mxw/vim-jsx'
 Plugin 'alvan/vim-closetag'
+Plugin 'skalnik/vim-vroom'
 Plugin 'Keithbsmiley/rspec.vim'
 
 call vundle#end()            " required
@@ -696,3 +697,5 @@ set rubydll=$HOME/.rbenv/versions/2.5.1/lib/libruby.2.5.1.dylib
 "something that is slower on the new regex engine.
 "Add in set re=1 to your  vimrc to force the old regex engine on any version newer
 set re=1
+
+let g:vroom_use_spring = 1
