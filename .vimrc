@@ -81,6 +81,8 @@ Plugin 'mxw/vim-jsx'
 Plugin 'alvan/vim-closetag'
 Plugin 'Keithbsmiley/rspec.vim'
 Plugin 'janko-m/vim-test'
+Plugin 'tpope/vim-rails'
+Plugin 'elixir-editors/vim-elixir'
 
 call vundle#end()            " required
 
