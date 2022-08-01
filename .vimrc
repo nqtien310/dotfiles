@@ -58,7 +58,7 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'tpope/vim-dispatch'
 Plugin 'ecomba/vim-ruby-refactoring'
 Plugin 'slim-template/vim-slim.git'
-Plugin 'FelikZ/ctrlp-py-matcher.git'
+"Plugin 'FelikZ/ctrlp-py-matcher.git'
 "Plugin 'JazzCore/ctrlp-cmatcher'
 "Plugin 'jeaye/color_coded'
 
@@ -375,7 +375,6 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\v\.(png|jpg|gif|pdf)$'
   \ }
 let MRU_Max_Entries = 400
-let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
 
 nnoremap <silent> <F4> <Esc>:ClearCtrlPCache<CR>
 nnoremap <silent> <F3> :TlistToggle<CR>
@@ -405,9 +404,6 @@ map <Leader>c<space> <plug>NERDCommenterToggle
 vmap D y'>p
 
 set wildignore+=*.o,*.obj,.git,.pdf,tmp/,admin/node_modules/,cordova/,node_modules/
-
-"clear highlight search
-nnoremap <Esc> :noh<CR><Esc>
 
 "Ctrl + S to save
 map <C-s> :w<CR>
